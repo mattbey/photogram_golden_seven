@@ -1,0 +1,17 @@
+<div>
+  <img src="<%= @photo.source %>">
+  <p>
+    <%= @photo.caption %>
+  </p>
+<p>
+<%= @photo.created_at%>
+</p>
+<p>
+<%= time_ago_in_words(@photo.created_at) %>
+</p>
+  <div>
+    <a href="/photos/">Back</a>
+    <a href="/photos/<%= @photo.id %>/edit">Edit</a>
+    <a href="/photos/<%= @photo.id %>/delete">Delete</a>
+  </div>
+</div>
