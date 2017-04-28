@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   #Read
   get("/photos", {:controller => "photos", :action => "index"})
+  get("/", {:controller => "photos", :action => "index"})
   get("/photos/:id", {:controller => "photos", :action => "show"})
 
   #Update
